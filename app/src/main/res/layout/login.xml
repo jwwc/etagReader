@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="云徽"
+        android:textColor="@color/green"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/pop"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:textCursorDrawable="@color/white"
+            android:hint="请输入账号"
+            android:textColor="@color/whitegrey"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/psd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@color/white"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:textColor="@color/whitegrey"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/lgn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttunbg"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="@color/green" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="忘记密码了吗"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

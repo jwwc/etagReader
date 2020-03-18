@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/blue_back"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/app_name">
+            </TextView>
+            <ImageView
+                android:src="@drawable/ic_bluetooth_white_24dp"
+                android:id="@+id/bluetooth"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ProgressBar
+            android:id="@+id/bar"
+            android:outlineSpotShadowColor="@color/green"
+            android:outlineAmbientShadowColor="@color/green"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progbar_bg"
+            android:layout_height="5dp">
+        </ProgressBar>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/device_state"
+                android:text="设备未连接"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.35"
+                android:layout_height="40dp">
+            </TextView>
+            <TextView
+                android:layout_weight="0.65"
+            android:layout_margin="10dp"
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="附近设备" />
+
+        </LinearLayout>
+        <ImageView
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <ListView
+            android:id="@+id/listMessage"
+            android:layout_width="match_parent"
+            android:layout_weight="0.97"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:background="@drawable/button_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:text="扫描" />
+
+    </LinearLayout>
+</LinearLayout>
